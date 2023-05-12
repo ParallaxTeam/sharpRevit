@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SharpRevit.SharedProject", "SharpRevit.SharedProject\SharpRevit.SharedProject.shproj", "{A881DA27-06D8-4432-86C3-D70F52EBE681}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpRevit.2022", "SharpRevit.2022\SharpRevit.2022.csproj", "{FF188B5E-1965-4451-AD08-0BEC719A6DD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpRevit.2021", "SharpRevit.2021\SharpRevit.2021.csproj", "{C80CAC95-58F8-4BAF-A74B-F4A2E7014818}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpRevit.2020", "SharpRevit.2020\SharpRevit.2020.csproj", "{BE483865-67FD-4DED-A546-9BD48F3D3DC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpRevit.2023", "SharpRevit.2023\SharpRevit.2023.csproj", "{343A46EC-6501-4FCF-88AB-FB67B065BCBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpRevit.2024", "SharpRevit.2024\SharpRevit.2024.csproj", "{B98DF698-470A-405B-9F8B-131713CB3D96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF188B5E-1965-4451-AD08-0BEC719A6DD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF188B5E-1965-4451-AD08-0BEC719A6DD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF188B5E-1965-4451-AD08-0BEC719A6DD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF188B5E-1965-4451-AD08-0BEC719A6DD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C80CAC95-58F8-4BAF-A74B-F4A2E7014818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C80CAC95-58F8-4BAF-A74B-F4A2E7014818}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C80CAC95-58F8-4BAF-A74B-F4A2E7014818}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C80CAC95-58F8-4BAF-A74B-F4A2E7014818}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE483865-67FD-4DED-A546-9BD48F3D3DC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE483865-67FD-4DED-A546-9BD48F3D3DC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE483865-67FD-4DED-A546-9BD48F3D3DC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE483865-67FD-4DED-A546-9BD48F3D3DC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{343A46EC-6501-4FCF-88AB-FB67B065BCBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{343A46EC-6501-4FCF-88AB-FB67B065BCBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{343A46EC-6501-4FCF-88AB-FB67B065BCBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{343A46EC-6501-4FCF-88AB-FB67B065BCBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B98DF698-470A-405B-9F8B-131713CB3D96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B98DF698-470A-405B-9F8B-131713CB3D96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B98DF698-470A-405B-9F8B-131713CB3D96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B98DF698-470A-405B-9F8B-131713CB3D96}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {391D2EAF-CE4E-4856-A2E4-10DB44E4E8A0}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		SharpRevit.SharedProject\SharpRevit.SharedProject.projitems*{343a46ec-6501-4fcf-88ab-fb67b065bcbd}*SharedItemsImports = 4
+		SharpRevit.SharedProject\SharpRevit.SharedProject.projitems*{a881da27-06d8-4432-86c3-d70f52ebe681}*SharedItemsImports = 13
+		SharpRevit.SharedProject\SharpRevit.SharedProject.projitems*{b98df698-470a-405b-9f8b-131713cb3d96}*SharedItemsImports = 4
+		SharpRevit.SharedProject\SharpRevit.SharedProject.projitems*{be483865-67fd-4ded-a546-9bd48f3d3dc9}*SharedItemsImports = 4
+		SharpRevit.SharedProject\SharpRevit.SharedProject.projitems*{c80cac95-58f8-4baf-a74b-f4a2e7014818}*SharedItemsImports = 4
+		SharpRevit.SharedProject\SharpRevit.SharedProject.projitems*{ff188b5e-1965-4451-ad08-0bec719a6dd1}*SharedItemsImports = 4
+	EndGlobalSection
+EndGlobal
