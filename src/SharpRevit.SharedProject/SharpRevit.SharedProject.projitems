@@ -10,8 +10,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)AppCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AssemblyInfo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Classes\Global.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\ViewportTypeWrapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Themes\RevitDark.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Themes\RevitLight.xaml.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utilities\ImageUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewportPurgeButton\ViewportPurgeCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewportPurgeButton\ViewportPurgeModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewportPurgeButton\ViewportPurgeView.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewportPurgeButton\ViewportPurgeViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)WhoDidThatButton\WhoCreatedThatCommand.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)WhoDidThatButton\WhoCreatedThisViewCommand.cs" />
   </ItemGroup>
@@ -29,5 +37,23 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)SharpRevit-debug.addin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)Resources\IconDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Themes\RevitDark.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Themes\RevitLight.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)ViewportPurgeButton\ViewportPurgeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 </Project>

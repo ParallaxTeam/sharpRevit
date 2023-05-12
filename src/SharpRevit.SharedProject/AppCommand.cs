@@ -51,6 +51,8 @@ namespace SharpRevit
             var ribbonPanel = app.CreateRibbonPanel( $"sharpRevit v.{Global.Version}");
 
 
+            ViewportPurgeButton.ViewportPurgeCommand.CreateButton(ribbonPanel);
+
             //worksharing display commands aka "team" from pyRevit
             SplitButtonData splitButtonData = new SplitButtonData("Team", "Team")
             {
