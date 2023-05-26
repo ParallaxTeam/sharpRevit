@@ -1,0 +1,6 @@
+D:\repos_prlx\sharpRevit\src\SharpRevit.2021\bin\Release\SharpRevit.dll
+D:\repos_prlx\sharpRevit\src\SharpRevit.2021\bin\Release\SharpRevit.pdb
+D:\repos_prlx\sharpRevit\src\SharpRevit.2021\obj\Release\SharpRevit.2021.csproj.AssemblyReference.cache
+D:\repos_prlx\sharpRevit\src\SharpRevit.2021\obj\Release\SharpRevit.2021.csproj.CoreCompileInputs.cache
+D:\repos_prlx\sharpRevit\src\SharpRevit.2021\obj\Release\SharpRevit.dll
+D:\repos_prlx\sharpRevit\src\SharpRevit.2021\obj\Release\SharpRevit.pdb
