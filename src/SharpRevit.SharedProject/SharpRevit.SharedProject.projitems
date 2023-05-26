@@ -36,6 +36,7 @@
     <Content Include="$(MSBuildThisFileDirectory)Resources\SharpRevit.Team_32-Light.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)packages.config" />
     <None Include="$(MSBuildThisFileDirectory)SharpRevit-debug.addin" />
   </ItemGroup>
   <ItemGroup>
