@@ -38,7 +38,7 @@ namespace SharpRevit.TemplateButton
 
             return Result.Succeeded;
         }
-        public static void CreateButton(SplitButton splitButton)
+        public static void CreateButton(PulldownButton splitButton)
         {
             var assembly = Global.ExecutingAssembly;
 

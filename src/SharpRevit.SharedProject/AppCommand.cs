@@ -59,7 +59,7 @@ namespace SharpRevit
                 ToolTip = "Tools to find out what is happening",
                 LargeImage = ImageUtils.LoadImage(Global.ExecutingAssembly, $"SharpRevit.Team_32{Global.UITheme}.png")
             };
-            var splitButton = ribbonPanel.AddItem(splitButtonData) as SplitButton;
+            var splitButton = ribbonPanel.AddItem(splitButtonData) as PulldownButton;
             Global.RibbonButtons.Add(splitButton);
 
             WhoCreatedThatCommand.CreateButton(splitButton);
