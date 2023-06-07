@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/ParallaxTeam/sharpRevit/main/docs/sharpRevitLogo.svg?token=GHSAT0AAAAAAB6IVT7OT3NVSWT3CWMFCWKEZEA7AHA"/>
+<img src="https://github.com/ParallaxTeam/sharpRevit/blob/main/docs/sharpRevitLogo.svg"/>
 
 
 Revit tools inspired by pyRevit, but in c#.
