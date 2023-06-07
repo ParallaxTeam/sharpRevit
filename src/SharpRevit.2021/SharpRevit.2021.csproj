@@ -111,4 +111,11 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\CommunityToolkit.Mvvm.8.2.0\build\netstandard2.0\CommunityToolkit.Mvvm.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CommunityToolkit.Mvvm.8.2.0\build\netstandard2.0\CommunityToolkit.Mvvm.targets'))" />
   </Target>
+  <PropertyGroup>
+    <PostBuildEvent>if $(ConfigurationName) == Debug copy "$(ProjectDir)\..\SharpRevit.SharedProject\SharpRevit-Debug.addin" "$(AppData)\Autodesk\REVIT\Addins\2021"
+if $(ConfigurationName) == Debug copy "$(ProjectDir)$(OutputPath)SharpRevit.dll" "$(AppData)\Autodesk\REVIT\Addins\2021\SharpRevit.dll"
+
+if $(ConfigurationName) == Release copy "$(ProjectDir)$(OutputPath)SharpRevit.dll" "$(ProjectDir)\..\..\_Release\2021\SharpRevit.dll"
+if $(ConfigurationName) == Release copy "$(ProjectDir)\SharpRevit.addin" "$(ProjectDir)\..\..\_Release\2021"</PostBuildEvent>
+  </PropertyGroup>
 </Project>

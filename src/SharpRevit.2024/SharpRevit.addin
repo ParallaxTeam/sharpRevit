@@ -2,7 +2,7 @@
 <RevitAddIns>
   <AddIn Type="Application">
     <Name>Sharp Revit</Name>
-    <Assembly>SharpRevit.dll</Assembly>
+    <Assembly>C:/Program Files/SharpRevit/2024/SharpRevit.dll</Assembly>
     <FullClassName>SharpRevit.AppCommand</FullClassName>
     <ClientId>D73B83AC-A8C9-4F7B-87F6-1088D0443A33</ClientId>
 	  <VendorId>ParallaxTeam</VendorId>
