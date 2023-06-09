@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "sharpRevit"
-#define MyAppVersion "1.0.0"
+#define MyAppVersion "1.0.1"
 #define MyAppPublisher "Parallax Team"
 #define MyAppURL "http://www.parallaxteam.com/"
 
@@ -34,7 +34,7 @@ AppPublisher={#MyAppPublisher}
 AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
-LicenseFile=.\LICENSEPAID
+LicenseFile=.\LICENSEFREE
 CreateAppDir=no
 OutputBaseFilename=sharpRevit.v{#MyAppVersion}
 SetupIconFile=..\assets\PrlxAppsIcon.ico

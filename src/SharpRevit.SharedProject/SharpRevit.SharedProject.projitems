@@ -32,8 +32,8 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Resources\SharpRevit.WhoCreatedThisView_32-Light.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="$(MSBuildThisFileDirectory)Resources\SharpRevit.Team_32-Dark.png" />
-    <Content Include="$(MSBuildThisFileDirectory)Resources\SharpRevit.Team_32-Light.png" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Resources\SharpRevit.Team_32-Dark.png" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Resources\SharpRevit.Team_32-Light.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)packages.config" />
