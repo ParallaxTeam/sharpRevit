@@ -9,7 +9,7 @@ using SharpRevit.TemplateButton;
 
 namespace SharpRevit
 {
-    internal class Application : IExternalApplication
+    public class Application : IExternalApplication
     {
         public Result OnStartup(UIControlledApplication application)
         {
