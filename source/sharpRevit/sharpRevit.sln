@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sharpRevit", "sharpRevit.csproj", "{C26CBF8D-15C6-42FD-98C6-34FF2B07F7ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug R20|Any CPU = Debug R20|Any CPU
+		Debug R21|Any CPU = Debug R21|Any CPU
+		Debug R22|Any CPU = Debug R22|Any CPU
+		Debug R23|Any CPU = Debug R23|Any CPU
+		Debug R24|Any CPU = Debug R24|Any CPU
+		Debug R25|Any CPU = Debug R25|Any CPU
+		Release R20|Any CPU = Release R20|Any CPU
+		Release R21|Any CPU = Release R21|Any CPU
+		Release R22|Any CPU = Release R22|Any CPU
+		Release R23|Any CPU = Release R23|Any CPU
+		Release R24|Any CPU = Release R24|Any CPU
+		Release R25|Any CPU = Release R25|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C26CBF8D-15C6-42FD-98C6-34FF2B07F7ED}.Debug R20|Any CPU.ActiveCfg = Debug R20|Any CPU
+		{C26CBF8D-15C6-42FD-98C6-34FF2B07F7ED}.Debug R20|Any CPU.Build.0 = Debug R20|Any CPU
+		{C26CBF8D-15C6-42FD-98C6-34FF2B07F7ED}.Debug R21|Any CPU.ActiveCfg = Debug R21|Any CPU
+		{C26CBF8D-15C6-42FD-98C6-34FF2B07F7ED}.Debug R21|Any CPU.Build.0 = Debug R21|Any CPU
+		{C26CBF8D-15C6-42FD-98C6-34FF2B07F7ED}.Debug R22|Any CPU.ActiveCfg = Debug R22|Any CPU
+		{C26CBF8D-15C6-42FD-98C6-34FF2B07F7ED}.Debug R22|Any CPU.Build.0 = Debug R22|Any CPU
+		{C26CBF8D-15C6-42FD-98C6-34FF2B07F7ED}.Debug R23|Any CPU.ActiveCfg = Debug R23|Any CPU
+		{C26CBF8D-15C6-42FD-98C6-34FF2B07F7ED}.Debug R23|Any CPU.Build.0 = Debug R23|Any CPU
+		{C26CBF8D-15C6-42FD-98C6-34FF2B07F7ED}.Debug R24|Any CPU.ActiveCfg = Debug R24|Any CPU
+		{C26CBF8D-15C6-42FD-98C6-34FF2B07F7ED}.Debug R24|Any CPU.Build.0 = Debug R24|Any CPU
+		{C26CBF8D-15C6-42FD-98C6-34FF2B07F7ED}.Debug R25|Any CPU.ActiveCfg = Debug R25|Any CPU
+		{C26CBF8D-15C6-42FD-98C6-34FF2B07F7ED}.Debug R25|Any CPU.Build.0 = Debug R25|Any CPU
+		{C26CBF8D-15C6-42FD-98C6-34FF2B07F7ED}.Release R20|Any CPU.ActiveCfg = Release R20|Any CPU
+		{C26CBF8D-15C6-42FD-98C6-34FF2B07F7ED}.Release R20|Any CPU.Build.0 = Release R20|Any CPU
+		{C26CBF8D-15C6-42FD-98C6-34FF2B07F7ED}.Release R21|Any CPU.ActiveCfg = Release R21|Any CPU
+		{C26CBF8D-15C6-42FD-98C6-34FF2B07F7ED}.Release R21|Any CPU.Build.0 = Release R21|Any CPU
+		{C26CBF8D-15C6-42FD-98C6-34FF2B07F7ED}.Release R22|Any CPU.ActiveCfg = Release R22|Any CPU
+		{C26CBF8D-15C6-42FD-98C6-34FF2B07F7ED}.Release R22|Any CPU.Build.0 = Release R22|Any CPU
+		{C26CBF8D-15C6-42FD-98C6-34FF2B07F7ED}.Release R23|Any CPU.ActiveCfg = Release R23|Any CPU
+		{C26CBF8D-15C6-42FD-98C6-34FF2B07F7ED}.Release R23|Any CPU.Build.0 = Release R23|Any CPU
+		{C26CBF8D-15C6-42FD-98C6-34FF2B07F7ED}.Release R24|Any CPU.ActiveCfg = Release R24|Any CPU
+		{C26CBF8D-15C6-42FD-98C6-34FF2B07F7ED}.Release R24|Any CPU.Build.0 = Release R24|Any CPU
+		{C26CBF8D-15C6-42FD-98C6-34FF2B07F7ED}.Release R25|Any CPU.ActiveCfg = Release R25|Any CPU
+		{C26CBF8D-15C6-42FD-98C6-34FF2B07F7ED}.Release R25|Any CPU.Build.0 = Release R25|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E2A225CD-DE53-4A51-A8A2-EA0AF0367CA6}
+	EndGlobalSection
+EndGlobal

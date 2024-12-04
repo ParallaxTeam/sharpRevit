@@ -1,0 +1,11 @@
+﻿<RevitAddIns>
+    <AddIn Type="Application">
+        <Name>sharpRevit</Name>
+        <Assembly>sharpRevit/sharpRevit.dll</Assembly>
+        <AddInId>19E367C4-D405-4611-A186-EF405547BD3A</AddInId>
+        <FullClassName>sharpRevit.Application</FullClassName>
+        <VendorId>Development</VendorId>
+        <VendorDescription></VendorDescription>
+        <VendorEmail></VendorEmail>
+    </AddIn>
+</RevitAddIns>
