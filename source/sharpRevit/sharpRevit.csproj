@@ -44,6 +44,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <None Remove="Resources\CommunityToolkit.Mvvm.dll" />
       <None Remove="Resources\SharpRevit.Team_32-Dark.png" />
       <None Remove="Resources\SharpRevit.Team_32-Light.png" />
       <None Remove="Resources\SharpRevit.ViewportPurge_32-Dark.png" />
@@ -56,6 +57,10 @@
 
     <ItemGroup>
       <Page Remove="Resources\IconDictionary.xaml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="Resources\CommunityToolkit.Mvvm.dll"/>
     </ItemGroup>
 
     <ItemGroup>
