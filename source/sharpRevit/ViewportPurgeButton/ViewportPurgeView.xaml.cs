@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
@@ -14,10 +14,6 @@ namespace SharpRevit.ViewportPurgeButton
         {
             this.InitializeComponent();
 
-            //set theme
-            this.ThemeDictionary.MergedDictionaries.RemoveAt(0);
-            Uri themeUri = Global.UITheme.Equals("-Light") ? new Uri("pack://application:,,,/SharpRevit;component/Themes/RevitLight.xaml", UriKind.RelativeOrAbsolute) : new Uri("pack://application:,,,/SharpRevit;component/Themes/RevitDark.xaml", UriKind.RelativeOrAbsolute);
-            this.ThemeDictionary.MergedDictionaries.Insert(0, new ResourceDictionary() { Source = themeUri });
         }
 
         private void ViewportGrid_OnSelectedCellsChanged(object sender, SelectedCellsChangedEventArgs e)

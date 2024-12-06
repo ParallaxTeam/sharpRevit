@@ -16,7 +16,6 @@
     <Window.Resources>
         <ResourceDictionary x:Name="ThemeDictionary" >
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/SharpRevit;component/Themes/RevitLight.xaml"/>
                 <ResourceDictionary Source="/SharpRevit;component/Resources/IconDictionary.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
