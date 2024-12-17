@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Prlx.TemplateTools.TemplateButton;
+using sharpRevit.PlaceOriginMarkerButton;
 using SharpRevit.TemplateButton;
 
 namespace SharpRevit
@@ -64,6 +65,10 @@ namespace SharpRevit
 
             WhoCreatedThatCommand.CreateButton(splitButton);
             WhoCreatedThisViewCommand.CreateButton(splitButton);
+
+            PlaceOriginMarkerCommand.CreateButton(ribbonPanel);
+
+
         }
 
 #if REVIT2024_OR_GREATER

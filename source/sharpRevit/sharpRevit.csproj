@@ -39,12 +39,14 @@
         <StartAction>Program</StartAction>
         <StartProgram>C:\Program Files\Autodesk\Revit $(RevitVersion)\Revit.exe</StartProgram>
         <StartArguments>/language ENG</StartArguments>
-        <AssemblyVersion>$(RevitVersion).1.1.0</AssemblyVersion>
-        <FileVersion>$(RevitVersion).1.1.0</FileVersion>
+        <AssemblyVersion>$(RevitVersion).1.1.2</AssemblyVersion>
+        <FileVersion>$(RevitVersion).1.1.2</FileVersion>
     </PropertyGroup>
 
     <ItemGroup>
       <None Remove="Resources\CommunityToolkit.Mvvm.dll" />
+      <None Remove="Resources\SharpRevit.PlaceOriginMarker_32-Dark.png" />
+      <None Remove="Resources\SharpRevit.PlaceOriginMarker_32-Light.png" />
       <None Remove="Resources\SharpRevit.Team_32-Dark.png" />
       <None Remove="Resources\SharpRevit.Team_32-Light.png" />
       <None Remove="Resources\SharpRevit.ViewportPurge_32-Dark.png" />
@@ -60,11 +62,13 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Content Include="Resources\CommunityToolkit.Mvvm.dll"/>
+      <Content Include="Resources\CommunityToolkit.Mvvm.dll" />
     </ItemGroup>
 
     <ItemGroup>
       <Resource Include="Resources\IconDictionary.xaml" />
+      <EmbeddedResource Include="Resources\SharpRevit.PlaceOriginMarker_32-Dark.png" />
+      <EmbeddedResource Include="Resources\SharpRevit.PlaceOriginMarker_32-Light.png" />
       <EmbeddedResource Include="Resources\SharpRevit.Team_32-Dark.png" />
       <EmbeddedResource Include="Resources\SharpRevit.Team_32-Light.png" />
       <EmbeddedResource Include="Resources\SharpRevit.ViewportPurge_32-Dark.png" />
