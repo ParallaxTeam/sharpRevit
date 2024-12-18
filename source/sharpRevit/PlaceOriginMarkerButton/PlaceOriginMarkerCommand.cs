@@ -18,11 +18,24 @@ namespace sharpRevit.PlaceOriginMarkerButton
             var uiDoc = commandData.Application.ActiveUIDocument;
             var doc = uiDoc.Document;
 
+            //get active view
+            var activeView = doc.ActiveView;
+
+            //bail out if they are on a sheet or something
+            if (activeView.ViewType is not (ViewType.AreaPlan or ViewType.DraftingView or ViewType.FloorPlan
+                or ViewType.CeilingPlan or ViewType.Legend or ViewType.Elevation or ViewType.Section
+                or ViewType.EngineeringPlan or ViewType.ThreeD)) return Result.Cancelled;
+
+
+            //zoom extents
+            XYZ firstExtent = null;
+            XYZ secondExtent = null;
+
+            //new element ids
+            List<ElementId> newElements = new List<ElementId>();
+
             try
             {
-                //get active view
-                var activeView = doc.ActiveView;
-
                 if (activeView.ViewType is ViewType.AreaPlan or ViewType.DraftingView or ViewType.FloorPlan or ViewType.CeilingPlan or ViewType.Legend or ViewType.Elevation or ViewType.Section or ViewType.EngineeringPlan or ViewType.ThreeD)
                 {
                     var viewOriginPoint = activeView.Origin;
@@ -49,6 +62,9 @@ namespace sharpRevit.PlaceOriginMarkerButton
                     var firstCurve = firstLine.CreateTransformed(tForm);
                     var secondCurve = secondLine.CreateTransformed(tForm);
 
+
+
+
                     using (Transaction createLinesTransaction = new Transaction(doc, $"Creating cross hairs at origin of {activeView.Name}."))
                     {
                         createLinesTransaction.Start();
@@ -60,22 +76,48 @@ namespace sharpRevit.PlaceOriginMarkerButton
                             var firstSymbolicLine = doc.FamilyCreate.NewSymbolicCurve(firstCurve, sketchPlane);
                             var secondSymbolicLine = doc.FamilyCreate.NewSymbolicCurve(secondCurve, sketchPlane);
 
+                            newElements.Add(firstSymbolicLine.Id);
+                            newElements.Add(secondSymbolicLine.Id);
                         }
                         else
                         {
                             var firstDetailLine = doc.Create.NewDetailCurve(activeView, firstCurve);
                             var secondDetailLine = doc.Create.NewDetailCurve(activeView, secondCurve);
+
+                            newElements.Add(firstDetailLine.Id);
+                            newElements.Add(secondDetailLine.Id);
                         }
-                      
+
                         createLinesTransaction.Commit();
                     }
-                   
+                    firstExtent = firstCurve.Evaluate(0, true);
+                    secondExtent = firstCurve.Evaluate(1, true);
+
                 }
             }
             catch (Exception)
             {
-              return Result.Failed;
+                return Result.Failed;
             }
+
+            //set the selection to the new stuff and zoom to it
+            uiDoc.Selection.SetElementIds(newElements);
+            //uiDoc.ShowElements(newElements);
+
+            var uiView = uiDoc.GetOpenUIViews().First(v => v.ViewId.Equals(doc.ActiveView.Id));
+            uiView.ZoomToFit();
+            uiView.ZoomAndCenterRectangle(firstExtent, secondExtent);
+
+            for (double i = 1; i < 3;)
+            {
+                uiView.Zoom(i);
+
+                uiDoc.RefreshActiveView();
+                Thread.Sleep(50);
+
+                i = i + 0.125;
+            }
+
 
             return Result.Succeeded;
         }
